@@ -29,38 +29,38 @@ eClinic is a web application designed to manage clinic operations, allowing heal
    cd eclinic-app
    
 ## Configure Database
-Create a new MySQL database (e.g. eclinic).
-Update the application.properties file with your database credentials:
-properties
-spring.datasource.url=jdbc:mysql://localhost:3306/eclinic
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+- Create a new MySQL database (e.g. eclinic).
+- Update the application.properties file with your database credentials:
+** properties
+- spring.datasource.url=jdbc:mysql://localhost:3306/eclinic
+- spring.datasource.username=your_username
+- spring.datasource.password=your_password
 
 ## Build the Project
-mvn clean install
-Run the Application
-mvn spring-boot:run
-Access the Application Open your web browser and navigate to http://localhost:8080.
+- mvn clean install
+- Run the Application
+- mvn spring-boot:run
+- Access the Application Open your web browser and navigate to http://localhost:8080.
 
 ## Usage
-Admin Panel: Manage users, appointments, and billing.
-Patient Portal: Patients can view their records and appointments.
-Appointment Booking: Users can book, view, and cancel appointments.
+- Admin Panel: Manage users, appointments, and billing.
+- Patient Portal: Patients can view their records and appointments.
+- Appointment Booking: Users can book, view, and cancel appointments.
 
 Contributing
 Contributions are welcome! Please follow these steps:
 
 ## Fork the repository.
-Create a new branch (git checkout -b feature/YourFeature).
-Make your changes and commit them (git commit -m 'Add some feature').
-Push to the branch (git push origin feature/YourFeature).
-Open a Pull Request.
+- Create a new branch (git checkout -b feature/YourFeature).
+- Make your changes and commit them (git commit -m 'Add some feature').
+- Push to the branch (git push origin feature/YourFeature).
+- Open a Pull Request.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
-Spring Boot Documentation
-MySQL Documentation
+- Spring Boot Documentation
+- MySQL Documentation
 
 Feel free to customize any sections to better fit your project's specific details
