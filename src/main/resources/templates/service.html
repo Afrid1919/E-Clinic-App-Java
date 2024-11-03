@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="with=device-width,  initial-scale=1.0">
+        <title>Service</title>
+        <link rel="stylesheet" href="service.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<section class="header">
+            <nav>
+                <a href="/home"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="/services">SERVICES</a></li>
+                        <li><a href="/appointment">APPOINTMENTS</a></li>
+                        <li><a href="/blog">BLOGS</a></li>
+                        <li><a href="/contact">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+      </section> 
+      
+      
+   <!---------Services We Offer  -------------->
+
+        <section class="cls-service">
+            <h1>Our Services</h1>
+            <p>Our hospital is the number one service provider and award winner for the best service provider and health care service in year 2022.</p>
+
+            <div class="row">
+        
+
+                 <div class="cls-service-col">
+                        <h3>OPD</h3>
+                        <p> The Full form of OPD is Outpatient Department. <br>
+                            An OPD is designed to be a first contact point between the patient and the hospital staff in a hospital department. <br>
+                            A Patient who goes first time to the hospital, he directly goes to OPD and then the OPD decides to which department a patient should go. </p>
+                    </div>
+
+                    <div class="cls-service-col">
+                    <h3>Diagnosis</h3>
+                    <p>Our Diagnosis Department at eClinic is committed to providing accurate and timely assessments to ensure optimal patient care.<br>
+                     Utilizing advanced technology and a team of experienced professionals, we offer a range of diagnostic services, including virtual consultations, lab tests, and imaging studies.<br>
+                     Our goal is to deliver comprehensive evaluations that help identify health issues early, enabling effective treatment plans tailored to each patient's needs.<br>
+                     With a focus on precision and patient comfort, we strive to make the diagnostic process as seamless and supportive as possible.</p>
+                </div>
+
+                <div class="cls-service-col">
+                    <h3>Operations</h3>
+                    <p>The Operation Department at eClinic is dedicated to ensuring the highest standards of care and efficiency for our patients undergoing surgical procedures.<br> 
+						Our skilled team of surgeons, nurses, and support staff collaborates closely to provide a safe and comfortable environment before, during, and after operations.<br>
+						We utilize advanced technology and best practices to minimize risks and optimize outcomes.<br> 
+						Committed to patient education and support, we guide you through every step of the surgical process, ensuring you feel informed and confident in your care.<br>
+						 Your health and well-being are our top priorities as we strive to deliver exceptional surgical services.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+		<!---------------------Call To Action---------------------------------->
+
+        <section class="cta">
+            <h1>Contacts us for any problem. We are here to help you out.</h1>
+            <p>Get the Online Appointment for the preferred doctors.<p>
+                <a href="/contact" class="visit-btn">CONTACT US</a>
+
+        </section>
+
+
+        <!----------------------- Footer ----------------------------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>eClinic is dedicated to revolutionizing healthcare by providing accessible, quality medical care through our innovative app.  <br>
+              We connect patients with qualified healthcare professionals for seamless virtual consultations, easy appointment scheduling, and secure access to medical records. <br>
+              Our mission is to empower individuals to take control of their health from the comfort of their homes while prioritizing privacy and high standards of care. <br>
+              Join us on your healthcare journey and experience a new level of convenience and support with eClinic.!</p>
+
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <a href="https://www.linkedin.com/in/afridpathan/"><i class="fa fa-linkedin" ></i> </a>
+
+                </div>
+             
+        </section>
+        
+      
+      
+      <!---------JavaScript for Toggle Menu ------------------------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+
+
+        </script>     
+	
+</body>
+</html>

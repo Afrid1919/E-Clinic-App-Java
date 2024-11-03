@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<link rel="stylesheet" href="appointment.css">
+    <script src="appointment.js"></script>
+<head>
+<meta charset="ISO-8859-1">
+<title>appointments</title>
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        -->
+</head>
+<body>
+	
+<section class="header">
+            <nav>
+                <a href="/home"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="/services">SERVICES</a></li>
+                        <li><a href="/appointment">APPOINTMENTS</a></li>
+                        <li><a href="/blog">BLOGS</a></li>
+                        <li><a href="/contact">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="regform">
+                <h1>Registration Form</h1>
+            </div>
+            <div class="main">
+            <form action="/appointment" method="post">
+                <div id="name">
+                    <h2 class="name">Name : </h2>
+                    <input class="firstname" type="text" name="fname"><br>
+                        <label class="firstlabel">First Name</label>
+                    <input class="lastname" type="text" name="lname"><br>
+                        <label class="lastlabel">Last Name</label>
+                </div>
+        
+                <h2 class="name">Gender :</h2>
+                <label class="radio">
+                    <input class="radio-one" type="radio" name="gender" value="male">
+                    <span class="checkmark"></span>
+                    Male
+                    </label>
+                    <label class="radio">
+                        <input class="radio-two" type="radio" name="gender" value="female">
+                        <span class="checkmark"></span>
+                    Female
+                </label>
+                <label class="radio">
+                    <input class="radio-three" type="radio" name="gender" value="others">
+                    <span class="checkmark"></span>
+                    Others
+                </label>
+        
+                <h2 class="name">Date of Birth :</h2>
+                <input class="dob" type ="date" name="dob"> 
+        
+                <h2 class="appo_class">Appointment Date :</h2>
+                <input class="appoDate" type ="date" name="appointmentDate"> 
+
+                <h2 class="ename">Email :</h2>
+                <input class="email" type ="email" name="email" placeholder="abc@example.com">
+
+                <h2 class="address">Address : </h2>
+                    <input class="country" type="text" name="address.country"><br>
+                        <label class="countrylabel">Country</label>
+                    <input class="city" type="text" name="address.city"><br>
+                        <label class="citylabel">City</label>
+                    <select class="state" name="address.state">
+                            <option disabled="disabled" selected="selected">---Choose Option---</option>
+                            <option>State 1</option>
+                            <option>State 2</option>
+                            <option>State 3</option>
+                            <option>State 4</option>
+                            <option>State 5</option>
+                            <option>State 6</option>
+                            <option>State 7</option>
+                        </select><br>
+                    <label class="statelabel">State</label>
+
+                <h2 class="contactlabel">Contact :</h2>
+                <input class="number" type ="text" name="contact">
+
+
+                <!---------------- Choose Field of Work -------------------------->              
+                
+                    <h2 class="docDetail" id="doctorDetail"> Doctor's Details    : </h2>  
+
+                    
+                    <select class="foWork" name="fieldOfWork" id="selectFieldList" size="1">           
+                        <option value="" selected="selected" >Select working field</option>
+                        </select><br>
+                        <label class="fowlabel">Field of Work  </label><br>
+                    
+                    <select class="docName" name="doctorName" id="selectDoctorList" size="1">               <!--name , id-->
+                        <option value="" selected="selected">Select Doctor's name </option>
+                        </select><br>
+                        <label class="doctorlabel"> Doctor's Name </label><br>
+                    
+                    <select class="docHour" name="docTime" id="selectTimeList" size="1">
+                        <option value="" selected="selected">Select time</option>
+                        </select><br>
+                        <label class="timelabel">Appointment Time </label><br>
+
+                
+
+                <!------------ Problem  --------------------------->
+
+
+                <h2 class="problemlabel">Problems :</h2>
+                <input class="problem" type ="text" name="problem" placeholder="Write your problems...............">                 
+        
+        
+                <!----submit bitton  -->
+                    <button type="submit" class="registerBtn">Register </button>
+
+                    <button class="cancelBtn" text="reset" >Cancel</button>
+                    <br>
+                    <br>
+
+            </form>
+            </div>
+
+        </section>
+	
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="with=device-width,  initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="blog.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">       
+        
+    </head>
+<body>
+        <section class="header">
+            <nav>
+                <a href="/home"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="/services">SERVICES</a></li>
+                        <li><a href="/appointment">APPOINTMENTS</a></li>
+                        <li><a href="/blog">BLOGS</a></li>
+                        <li><a href="/contact">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+
+        </section>
+        
+        <!-- ---------------- OUR BLOGS ------------------>
+        
+         <section class="cls-blog">
+            <h1>Our Blog</h1>
+            <p>Our blog at eClinic is your go-to resource for valuable health insights, expert advice, and the latest trends in healthcare.<br>
+             We aim to empower our readers with knowledge on a wide range of topics, from preventive care and wellness tips to in-depth articles on medical conditions and treatments.
+             Written by healthcare professionals and industry experts, our blog serves as a platform to foster informed discussions and promote a healthier lifestyle.<br>
+             Whether you’re seeking guidance on managing a specific health issue or simply want to stay updated on health news, our blog is here to support your journey towards better health.</p>
+
+            <div class="row">
+                <div class="cls-blog-col">
+                    <img src="images/f.jpg">
+                    <h3>Dr.Sarah Thompson - Surgeon</h3>
+                    <p>Dr. Sarah Thompson is a board-certified surgeon with over 15 years of experience in performing complex surgical procedures.
+                       Specializing in minimally invasive techniques, she is dedicated to achieving the best outcomes for her patients while ensuring a comfortable recovery process.
+                       Dr. Thompson is known for her compassionate approach and meticulous attention to detail, making her a trusted choice for surgical care.</p>
+                </div>
+
+                <div class="cls-blog-col">
+                    <img src="images/g.jpg">
+                    <h3>Dr. Michael Lee - Diagnostic Specialist</h3>
+                    <p>Dr. Michael Lee is a highly skilled diagnostic specialist with a passion for uncovering health issues through advanced diagnostic techniques.
+                    	With a decade of experience, he employs a comprehensive approach to evaluate and diagnose conditions accurately. 
+                    	Dr. Lee believes in the importance of patient education and works closely with individuals to explain their results and develop effective treatment plans.</p>
+                </div>
+
+                <div class="cls-blog-col">
+                    <img src="images/h.jpg">
+                    <h3>Dr. Emma Patel - Cardiologist </h3>
+                    <p>Dr. Emma Patel is an esteemed cardiologist with expertise in heart health and disease management. 
+						With over 12 years of experience, she focuses on preventative care, diagnosis, and treatment of cardiovascular conditions. 
+						Dr. Patel is committed to promoting heart health through lifestyle changes and advanced therapies, ensuring her patients receive personalized care tailored to their unique needs.</p>
+                </div>
+            </div>
+        </section> 
+        
+        
+        <!---------------------Call To Action---------------------------------->
+
+        <section class="cta">
+            <h1>Contacts us for any problem. We are here to help you out.</h1>
+            <p>Get the Online Appointment for the preferred doctors.<p>
+                <a href="/contact" class="visit-btn">CONTACT US</a>
+
+        </section>
+
+
+       
+       <!----------------------- Footer ----------------------------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>eClinic is dedicated to revolutionizing healthcare by providing accessible, quality medical care through our innovative app.  <br>
+              We connect patients with qualified healthcare professionals for seamless virtual consultations, easy appointment scheduling, and secure access to medical records. <br>
+              Our mission is to empower individuals to take control of their health from the comfort of their homes while prioritizing privacy and high standards of care. <br>
+              Join us on your healthcare journey and experience a new level of convenience and support with eClinic.!</p>
+                
+    			<div class="box-container">
+       			<div class="box">
+           		<h3>Quick links</h3>
+            	<a href="/home"> <i class="fa fa-arrow-right"></i> Home </a>
+            	<a href="/services"> <i class="fa fa-arrow-right"></i> Services </a>
+            	<a href="/appointment"> <i class="fa fa-arrow-right"></i> Appointments </a>
+            	<a href="/blog"> <i class="fa fa-arrow-right"></i> Blogs </a>
+            	<a href="/contact"> <i class="fa fa-arrow-right"></i> Contacts </a>
+        		</div>
+        
+        		<div class="box">
+            	<h3>Our locations</h3>
+                <a href=https://www.bing.com/maps?osid=c2d6fe20-a63c-45e0-8b0e-cf6530c1630f&cp=16.699998~74.22801&lvl=16&pi=0&imgid=5bdabbdc-9b8a-4042-9ee1-b6ad6e6c54ea&v=2&sV=2&form=S00027> <i class="fa fa-map-marker-alt"></i> India </a>
+        		</div>
+
+        		<div class="box">
+           		<h3>Contact info</h3>
+            	<a href="#"> <i class="fa fa-phone"></i> +91 89566xxxxx </a>
+            	<a href="#"> <i class="fa fa-phone"></i> +91 98909xxxxx </a>
+            	<a href="mailto:afrid2108@gmail.com"> <i class="fa fa-envelope"></i>  Email Us </a> 
+        		</div>
+        		
+        
+    			</div>
+    			<div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <a href="https://www.linkedin.com/in/afridpathan/"><i class="fa fa-linkedin" ></i> </a>
+
+                </div>
+                
+    	 <div class="credit"> Created by <span> Afrid Pathan </span> | all rights reserved! </div>
+
+</section>
+       
+        
+        <!---------------JavaScript for Toggle Menu ------------------------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+</body>
+</html>

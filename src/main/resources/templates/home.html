@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta name="viewport" content="with=device-width,  initial-scale=1.0">
+        <title>E-clinic</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="/home"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="/services">SERVICES</a></li>
+                        <li><a href="/appointment">APPOINTMENTS</a></li>
+                        <li><a href="/blog">BLOGS</a></li>
+                        <li><a href="/contact">CONTACTS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>E-clinic</h1>
+                <p> We are here for your service. If you have any health problem contact to us and get an appointment online. </p>
+                <a href="/contact" class="visit-btn">Visit Us to know More</a>
+            </div>
+
+        </section>
+
+<!------------  Appointment ------------------>
+        <section class="cls-appointment">
+            <h1>Services</h1>
+            <p>Here are the services we offers! </p>
+
+            <div class="row">
+                <div class="cls-appointment-col">
+                    <img src="images/d.jpg">
+                    <div class="layer">
+                        <h3>Test</h3>
+                    </div>
+                </div>
+
+                <div class="cls-appointment-col">
+                    <img src="images/e.jpg">
+                    <div class="layer">
+                        <h3>Diagnosis</h3>
+                    </div>
+                </div>
+
+                <div class="cls-appointment-col">
+                    <img src="images/c.jpg">
+                    <div class="layer">
+                        <h3>Operations</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------------------------Patient's Reviews--------------------------------->>
+        <section class="cls-review">
+            <h1>Patient's Reviews</h1>
+            <p>Here is the feedback and suggestions form our various patients.</p>
+
+            <div class="row">
+                <div class="cls-review-col">
+                    <img src="images/b.jpg">
+                    <h3>Mr.Ajay Kumar</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eius perspiciatis dignissimos nam quos fugit neque, quia in sequi praesentium, consequatur molestiae. Ipsam nihil modi, totam omnis facere cupiditate tempore?</p>
+                    
+                </div>
+
+                <div class="cls-review-col">
+                    <img src="images/i.jpg">
+                    <h3>Mr. Mohan Sharma</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores eius perspiciatis dignissimos nam quos fugit neque, quia in sequi praesentium, consequatur molestiae. Ipsam nihil modi, totam omnis facere cupiditate tempore?</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!---------------------Call To Action---------------------------------->
+
+        <section class="cta">
+            <h1>Contacts us for any problem. We are here to help you out.</h1>
+            <p>Get the Online Appointment for the preferred doctors.<p>
+                <a href="/contact" class="visit-btn">CONTACT US</a>
+
+        </section>
+
+
+               <!----------------------- Footer ----------------------------->
+
+        <section class="footer">
+            <h4>About Us</h4>
+                        <p>eClinic is dedicated to revolutionizing healthcare by providing accessible, quality medical care through our innovative app.  <br>
+              We connect patients with qualified healthcare professionals for seamless virtual consultations, easy appointment scheduling, and secure access to medical records. <br>
+              Our mission is to empower individuals to take control of their health from the comfort of their homes while prioritizing privacy and high standards of care. <br>
+              Join us on your healthcare journey and experience a new level of convenience and support with eClinic.!</p>
+                
+        
+        <!-- footer section starts  -->
+
+    			<div class="box-container">
+       			<div class="box">
+           		<h3>Quick links</h3>
+            	<a href="/home"> <i class="fa fa-arrow-right"></i> Home </a>
+            	<a href="/services"> <i class="fa fa-arrow-right"></i> Services </a>
+            	<a href="/appointment"> <i class="fa fa-arrow-right"></i> Appointments </a>
+            	<a href="/blog"> <i class="fa fa-arrow-right"></i> Blogs </a>
+            	<a href="/contact"> <i class="fa fa-arrow-right"></i> Contacts </a>
+        		</div>
+        
+        		<div class="box">
+            	<h3>Our locations</h3>
+            	<a href=https://www.bing.com/maps?osid=c2d6fe20-a63c-45e0-8b0e-cf6530c1630f&cp=16.699998~74.22801&lvl=16&pi=0&imgid=5bdabbdc-9b8a-4042-9ee1-b6ad6e6c54ea&v=2&sV=2&form=S00027> <i class="fa fa-map-marker-alt"></i> India </a>
+        		</div>
+
+        		<div class="box">
+           		<h3>Contact info</h3>
+            	<a href="#"> <i class="fa fa-phone"></i> +91 89566xxxxx </a>
+            	<a href="#"> <i class="fa fa-phone"></i> +91 98909xxxxx </a>
+            	<a href="mailto:afrid2108@gmail.com"> <i class="fa fa-envelope"></i> Email Us</a>
+        		</div>
+        		
+        
+    			</div>		
+    			<div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+ 					<a href="https://www.linkedin.com/in/afridpathan/"><i class="fa fa-linkedin" ></i> </a>
+ 				 </div>
+                
+    	
+    	 <div class="credit"> Created by <span> Afrid Pathan </span> | all rights reserved! </div>
+</section>
+
+
+        <!---------JavaScript for Toggle Menu ------------------------>
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,529 @@
+@charset "ISO-8859-1";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/b.jpg);
+    background-position: absolute;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+} 
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px ;
+    font-size: 14px;
+    color: #fff;
+}
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+    }
+    nav .fa{
+        display: block;
+        color:#fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    } 
+}     
+        /* -------------------For Form ----------------- */
+        
+        
+        body{
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 0px;
+        }
+        .regform{
+            width: 900px;
+            background-color: rgb(0,0,0,6);
+            margin:auto;
+            color: #ffffff;
+            padding: 10px 0px 10px 0px;
+            text-align:center;
+            border-radius: 15px 15px 0px 0px;
+        }
+        .main{
+            background-color: rgb(0,0,0,0.5);
+            width: 900px;
+            margin: auto;
+        }
+        form{
+            padding:10px;
+        }
+        #name{
+            width:100%;
+            height: 100px;
+        }
+        .name{
+            margin-left: 25px;
+            margin-top: 30px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        /* -------------- User Name ----------------- */
+        .firstname{
+            position: relative;
+            left: 150px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 150px;
+        }
+        .middlename{
+            position: relative;
+            left: 300px;
+            top: -80px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 150px;
+        }
+        .lastname{
+            position:relative;
+            left: 500px;
+            top: -125px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 150px;
+        }
+        .firstlabel{
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 150px;
+            top: -45px;
+        }
+        .middlelabel{
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 380px;
+            top: -90px;
+        }
+        .lastlabel{
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 590px;
+            top: -125px;
+        }
+        /* ----------------Gender 'radio button'------------------------------- */
+        .radio{
+            display: inline-block;
+            /* padding-right: 70px;
+            font-size: 25px;
+            margin-left: 25px;
+            margin-top: 15px; */
+            color: white;
+            position: relative;
+            left: 150px;
+            top: -37px;
+            line-height: 40px;
+            width: 95px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+        .radio input{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+        }
+
+        /* ---------Date of Birth ComboBox--------------- */
+        .dob{
+            position: relative;
+            left: 150px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 150px;
+        }
+        /* -----------------Appointment Date--------------------------------- */
+        .appo_class{
+            margin-left: 400px;
+            margin-top: -75px;
+            width: 120px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            width:100%;
+            height: 100px;
+        }
+        .appoDate{
+            position: relative;
+            left: 600px;
+            top: -110px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 150px;
+        }
+        /* --------------Email label -------------------- */
+        .ename{
+            margin-left: 25px;  
+            margin-top: -50px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            top: -80px;
+            width:100%;
+            height: 100px;
+        }
+        .email{
+            position: relative;
+            left: 150px;
+            top: -100px;
+            line-height: 40px;
+            width: 600px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+        /* --------------Contact Number's  'Class' -------------------------------- */
+        .contactlabel{
+            margin-left: 25px;  
+            margin-top: -130px; 
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            top: -150px;
+            width:100%;
+            height: 100px;
+        }
+        .number{
+            position: relative;
+            left: 150px;
+            top: -105px;
+            line-height: 40px;
+            width: 600px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+        
+
+        /* -------------For Address-------------- */
+    
+        .address{ 
+            margin-left: 25px;  
+            margin-top: -10px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            
+            width:100%;
+            height: 100px;
+        }
+        .country{
+            position: relative;
+            left: 150px;
+            top: -110px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 150px;
+        }
+        .city{
+            position: relative;
+            left: 310px;
+            top: -155px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 150px;
+        }
+        .state{
+            position:relative;
+            left: 550px;
+            top: -195px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 220px;
+            height: 40px;
+        }
+        .countrylabel{
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 150px;
+            top: -110px;
+        }
+        .citylabel{
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 370px;
+            top: -150px;
+        }
+        .statelabel{
+            position: relative;
+            color: #e5e5e5;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 590px;
+            top: -190px;
+        }
+        /* --------------------Doctor's Details----- Appointment Form----------------------------- */
+
+        .docDetail{
+            margin-left: 25px;
+            margin-top: -60px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            width:100%;
+            height: 100px;
+            top: -90px;
+        }
+        .foWork{                                            /*---Field of Work for doctor--BoxCombo-----*/
+            position: relative;
+            left: 200px;
+            top: -100px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 200px;
+            height: 40px;
+        }
+        .fowlabel{                                          /*---------Field of Work-----Text-------------------*/
+            position: relative;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 200px;
+            top: -90px;
+            width: 200px;
+            height: 35px;
+            color: #ffffff;
+        }
+        .docName{                                               /*---Field of Work for doctor--BoxCombo---Doctor Name--*/
+            position: relative;
+            left: 420px;
+            top: -160px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 220px;
+            height: 40px;
+        }
+        .doctorlabel{                                           /*---------Field of Work----label---Doctor Name-----------------*/
+            position: relative;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 420px;
+            top: -155px;
+            width: 200px;
+            height: 35px;
+            color: #fff;
+        }
+        .docHour{                                            /*---Field of Work for doctor--BoxCombo--Appointent Time---*/
+            position:relative;
+            left: 650px;
+            top: -219px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            width: 150px;
+            height: 40px;
+        }
+        .timelabel{                                                /*---------Field of Work-----label-------Appointment Time-------*/
+            position: relative;
+            text-transform: capitalize;
+            font-size: 14px;
+            left: 650px;
+            top: -220px;
+            width: 200px;
+            height: 35px;
+            color: #ffffff;
+        } 
+
+
+
+        /* --------------------Problem-------------------------- */
+        .problemlabel{
+            margin-left: 25px;  
+            margin-top: -180px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            top: -80px;
+            width:100%;
+            height: 100px;
+        }
+        .problem{
+            position: relative;
+            left: 150px;
+            top: -100px;
+            line-height: 40px;
+            width: 600px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+
+        /* -----------Register Button------------ */
+        
+        .registerBtn{
+            background-color: #8cf263;
+            display: block;
+            margin: 20px 0px 0px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border:2px solid #eff0f1;
+            padding: 14px 110px;
+            outline: none;
+            color: rgb(13, 12, 12); 
+            cursor: pointer;
+            transition: 0.2px;
+            font-weight: 1000;  
+            margin-top: -30px;
+            margin-left: 150px;
+
+        }
+        .registerBtn:hover{
+            background-color: #479523;
+            color: #fff;
+        }
+
+        /* --------- Cancel Button-------------------- */
+
+        .cancelBtn{
+            background-color: #ef5c37;
+            display: block;
+            margin: 20px 0px 0px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border:2px solid #eff0f1;
+            padding: 14px 110px;
+            outline: none;
+            color: rgb(13, 12, 12); 
+            cursor: pointer;
+            transition: 0.2px;
+            font-weight: 1000;
+            margin-top: -55px;
+            margin-left: 525px;
+        }
+        .cancelBtn:hover{
+            background-color: rgb(234, 48, 48);
+            color: #fff;
+        }
+
+
+
+
